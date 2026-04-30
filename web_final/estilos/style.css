@@ -76,3 +76,17 @@ nav ul li a:hover {
     justify-content: center;
     font-size: 12px;
 }
+
+/* Sección de banner */
+.banner{
+    width: 100%;
+    height: 20vh;
+    background: url('../imagenes/portada-tunnel.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
