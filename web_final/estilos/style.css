@@ -80,7 +80,7 @@ nav ul li a:hover {
 /* Sección de banner */
 .banner{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background: url('../imagenes/portada-tunnel.jpg');
     background-size: cover;
     background-position: center;
@@ -89,4 +89,45 @@ nav ul li a:hover {
     justify-content: center;
     color: #fff;
     text-align: center;
+    font-size: 1.5em;
 }
+
+/* SECCION ACERCA DE NOSOTROS */
+.sobre-nosotros {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+
+.nosotros-contenido {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.nosotros-texto {
+    flex: 1;
+    min-width: 300px;
+    width: 20%;
+}
+
+.nosotros-texto p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nosotros-imagen {
+    flex: 1;
+    min-width: 300px;
+    width: 20%;
+    height: 40vh;
+    background-color: #fff;
+    background: url(../imagenes/ACERCA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
