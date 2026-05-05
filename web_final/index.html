@@ -67,15 +67,49 @@
                 </div>
             </div>
         </section>
+        <!-- SECCION CATALOGO -->
+         <section id="catalogo" class="catalogo-seccion">
+            <div class="contenedor">
+                <h2>Catálogo</h2>
+
+                <!-- Barra de búsqueda y filtros -->
+                <div class="herramientas-catalogo">
+                    <div class="buscador">
+                        <input type="text" id="busqueda" placeholder="Buscar por título o autor...">
+                        <button id="btn-buscar">Buscar</button>
+                    </div>
+
+                    <div class="selector-categoria">
+                        <select id="categoria">
+                            <option value="todas">Todas las categorías</option>
+                            <option value="novela">Novela</option>
+                            <option value="ciencia">Ciencia</option>
+                            <option value="historia">Historia</option>
+                            <option value="fantasia">Fantasía</option>
+                            <option value="infantil">Infantil</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Cuadrícula de productos (se llena con JS) -->
+                <div id="productos" class="productos-grid"></div>
+
+                <!-- Mensaje cuando no hay resultados -->
+                <div id="sin-resultados" class="mensaje-info oculto">
+                    No se encontraron libros.
+                </div>
+
+                <!-- Paginación (se genera con JS) -->
+                <div class="paginacion" id="paginacion"></div>
+            </div>
+        </section>
        
 
     </main>
 
 
     <!-- ===================== PIE DE PÁGINA ===================== -->
-    <footer id="contacto">
-        
-    </footer>
+    
 
 
 </body>
