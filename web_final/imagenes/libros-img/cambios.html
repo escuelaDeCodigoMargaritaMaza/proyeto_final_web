@@ -1,0 +1,149 @@
+<footer id="contacto">
+    <div class="contenedor">
+        <div class="footer-columnas">
+
+            <!-- Columna: Información de contacto -->
+            <div class="footer-columna">
+                <h3>Librería El Túnel</h3>
+                <p>Dirección: Calle de los Libros 123, Ciudad</p>
+                <p>Teléfono: (01) 234-5678</p>
+                <p>Email: info@libroseltunel.com</p>
+                <p>Horarios: Lunes a Sábados de 10am a 6pm</p>
+
+                <div class="redes-sociales">
+                    <a class="red-social" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+                    <a class="red-social" href="https://twitter.com/" target="_blank">X / Twitter</a>
+                    <a class="red-social" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a class="red-social" href="https://www.tiktok.com/" target="_blank">TikTok</a>
+                    <a class="red-social" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                </div>
+            </div>
+
+            <!-- Columna: Links de navegación -->
+            <div class="footer-columna">
+                <h3>Conócenos</h3>
+                <a href="#" class="footer__link">Inicio</a>
+                <a href="#" class="footer__link">Acerca de El Túnel</a>
+                <a href="#" class="footer__link">Tarjeta de cliente frecuente</a>
+                <a href="#" class="footer__link">Ventas por mayoreo</a>
+                <a href="#" class="footer__link">Facturación</a>
+                <a href="#" class="footer__link">Aviso de privacidad</a>
+                <a href="#" class="footer__link">Términos y condiciones</a>
+            </div>
+
+            <!-- Columna: Suscripción al newsletter -->
+            <div class="footer-columna">
+                <h3>Regístrate</h3>
+                <p>Regístrate para recibir noticias de promociones, eventos y actualizaciones.</p>
+
+                <div class="footer__subscripcion">
+                    <input type="email" class="footer__input" placeholder="Ingresa tu email">
+                    <button class="suscripcion__enviar">Enviar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 <strong>El Túnel</strong>. Todos los derechos reservados.
+                <strong> | Agencia Digital de Innovación Pública | Escuela de Código</strong>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+/* ===================== FOOTER ===================== */
+
+footer {
+    background-color: #ad9e8fda;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-columna h3 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-columna p {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.red-social {
+    width: 25px;
+    height: 25px;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.red-social:hover {
+    color: #000000;
+}
+
+/* Links de navegación */
+.footer__link {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+}
+
+/* Suscripción */
+.footer__subscripcion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer__input {
+    background: #ffffff;
+    width: 100%;
+    font-size: small;
+    display: block;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+}
+
+.suscripcion__enviar {
+    background-color: #313B52;
+    color: #ffffff;
+    border: 1px solid #313B52;
+    border-radius: 0px 6px 6px 0px;
+    margin-top: 10px;
+    padding: 6.1px;
+    font-size: small;
+    cursor: pointer;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #000000;
+}
