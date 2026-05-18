@@ -1,288 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Túnel - Librería Online</title>
+    <link rel="stylesheet" href="estilos/style.css ">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/catalogo.js"></script>
+    <script src="scripts/app.js"></script>   
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+</head>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+<body>
 
+    <!-- ===================== ENCABEZADO Y NAVEGACIÓN ===================== -->
+    <header>
+        <div class="contenedor">
 
-a {
-    text-decoration: none;
-    color: #403022;
-}
+        
+        <h1>El Túnel</h1>
 
-ul {
-    list-style: none;
-}
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono" id="carrito-icono">
+            <span class="material-icons">shopping_cart</span>
+            <span class="contador-carrito" id="contador-carrito">0</span>
 
-header .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 70px;
-}
+        </div>
+        </div>
 
-header h1 {
-    color: #403022;
-    font-size: 38px;
-}
-
-nav ul {
-    display: flex;
-    gap: 60px;
-}
-
-nav ul li a {
-    color: #555;
-    font-weight: 510;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #733036;
-}
-
-.carrito-icono {
-    position: relative;
-    cursor: pointer;
-}
-
-.contador-carrito {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: #733036;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-}
-
-/* Sección de banner */
-.banner{
-    width: 100%;
-    height: 30vh;
-    background: url('../imagenes/portada-tunnel.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-/* SECCION ACERCA DE NOSOTROS */
-.sobre-nosotros {
-    padding: 40px 0;
-    background-color: #f1f1f1;
-}
-
-.nosotros-contenido {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    margin-top: 30px;
-    margin: 30px auto 0;
-    justify-content: center;
-}
-
-.nosotros-texto {
-    flex: 1;
-    min-width: 300px;
-    width: 20%;
-}
-
-.nosotros-texto p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.nosotros-imagen {
-    flex: 1;
-    min-width: 300px;
-    width: 20%;
-    height: 40vh;
-    background-color: #fff;
-    background: url(../imagenes/ACERCA.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* SECCION CATALOGO */
-/* ===================== CATÁLOGO ===================== */
-h2{
-    padding: 20px;
-}
-.contenedor{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.catalogo-seccion {
-    width: 100%;
-    height: 90vh;
-    background-color: #fcfafa;
-    
-}
-
-/* Barra de herramientas: buscador + filtro */
-.herramientas-catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 30px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.buscador {
-    display: flex;
-    flex: 1;
-    max-width: 500px;
-}
+    </header>
 
 
-.buscador input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
-    font-size: 16px;
-}
+    <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+    <main>
+        <section class="banner">
+            <div class="contenedor">
+                <h2>...Creando nuevos mundos, historias y recuerdos</h2>
+                <p><i>"Vivir consiste en construir futuros recuerdos"</i></p>
+            </div>
 
-.buscador button {
-    padding: 10px 15px;
-    background-color: #733036;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-size: 16px;
-}
+        </section>
 
-.selector-categoria select {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    min-width: 200px;
-}
+        <section id="nosotros" class="sobre-nosotros">
+            <div class="contenedor">
+                <h2>Conoce Librería El Túnel</h2>
 
-/* footer */
-/* ===================== FOOTER ===================== */
+                <div class="nosotros-contenido">
+                    <div class="nosotros-texto">
+                        <p>El Túnel es una librería ideal para los amantes de la literatura.</p>
+                        <p>Además del servicio de venta de libros y productos en línea, puedes visitar nuestra sucursal
+                            y acompañar tu lectura con una taza de café o bebida de tu elección, o disfrutar de los
+                            diversos eventos culturales que tenemos para ti.</p>
+                        <p>Síguenos en redes sociales y mantente atento a la cartelera de eventos.</p>
+                        <p><b>¡Ven a Librería El Túnel, te esperamos!</b></p>
+                    </div>
 
-footer {
-    background-color: #ad9e8fda;
-    color: #fff;
-    padding: 60px 0 30px;
-}
+                    <div class="nosotros-imagen">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION CATALOGO -->
+         <section id="catalogo" class="catalogo-seccion">
+            <div class="contenedor">
+                <h2>Catálogo</h2>
 
-.footer-columnas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 40px;
-}
+                <!-- Barra de búsqueda y filtros -->
+                <div class="herramientas-catalogo">
+                    <div class="buscador">
+                        <input type="text" id="busqueda" placeholder="Buscar por título o autor...">
+                        <button id="btn-buscar">Buscar</button>
+                    </div>
 
-.footer-columna {
-    flex: 1;
-    min-width: 250px;
-}
+                    <div class="selector-categoria">
+                        <select id="categoria">
+                            <option value="todas">Todas las categorías</option>
+                            <option value="novela">Novela</option>
+                            <option value="ciencia">Ciencia</option>
+                            <option value="historia">Historia</option>
+                            <option value="fantasia">Fantasía</option>
+                            <option value="infantil">Infantil</option>
+                        </select>
+                    </div>
+                </div>
 
-.footer-columna h3 {
-    color: #000000;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
+                <!-- Cuadrícula de productos (se llena con JS) -->
+                <div id="productos" class="productos-grid"></div>
 
-.footer-columna p {
-    color: #000000;
-    margin-bottom: 10px;
-}
+                <!-- Mensaje cuando no hay resultados -->
+                <div id="sin-resultados" class="mensaje-info oculto">
+                    No se encontraron libros.
+                </div>
 
-/* Redes sociales */
-.redes-sociales {
-    display: flex;
-    gap: 15px;
-    margin-top: 35px;
-}
+                <!-- Paginación (se genera con JS) -->
+                <div class="paginacion" id="paginacion"></div>
+            </div>
+        </section>
+       
 
-.red-social {
-    width: 25px;
-    height: 25px;
-    color: #000000;
-    transition: color 0.3s;
-}
+    </main>
 
-.red-social:hover {
-    color: #000000;
-}
 
-/* Links de navegación */
-.footer__link {
-    color: #000000;
-    text-decoration: none;
-    display: block;
-    padding: 2px;
-}
+    <!-- ===================== PIE DE PÁGINA ===================== -->
+    <footer id="contacto">
+    <div class="contenedor">
+        <div class="footer-columnas">
 
-/* Suscripción */
-.footer__subscripcion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px;
-}
+            <!-- Columna: Información de contacto -->
+            <div class="footer-columna">
+                <h3>Librería El Túnel</h3>
+                <p>Dirección: Calle de los Libros 123, Ciudad</p>
+                <p>Teléfono: (01) 234-5678</p>
+                <p>Email: info@libroseltunel.com</p>
+                <p>Horarios: Lunes a Sábados de 10am a 6pm</p>
 
-.footer__input {
-    background: #ffffff;
-    width: 100%;
-    font-size: small;
-    display: block;
-    padding: 5px;
-    margin-top: 10px;
-    border: 1px solid #ffffff;
-}
+                <div class="redes-sociales">
+                    <a class="red-social" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+                    <a class="red-social" href="https://twitter.com/" target="_blank">X / Twitter</a>
+                    <a class="red-social" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a class="red-social" href="https://www.tiktok.com/" target="_blank">TikTok</a>
+                    <a class="red-social" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                </div>
+            </div>
 
-.suscripcion__enviar {
-    background-color: #313B52;
-    color: #ffffff;
-    border: 1px solid #313B52;
-    border-radius: 0px 6px 6px 0px;
-    margin-top: 10px;
-    padding: 6.1px;
-    font-size: small;
-    cursor: pointer;
-}
+            <!-- Columna: Links de navegación -->
+            <div class="footer-columna">
+                <h3>Conócenos</h3>
+                <a href="#" class="footer__link">Inicio</a>
+                <a href="#" class="footer__link">Acerca de El Túnel</a>
+                <a href="#" class="footer__link">Tarjeta de cliente frecuente</a>
+                <a href="#" class="footer__link">Ventas por mayoreo</a>
+                <a href="#" class="footer__link">Facturación</a>
+                <a href="#" class="footer__link">Aviso de privacidad</a>
+                <a href="#" class="footer__link">Términos y condiciones</a>
+            </div>
 
-/* Copyright */
-.copyright {
-    text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #000000;
-}
+            <!-- Columna: Suscripción al newsletter -->
+            <div class="footer-columna">
+                <h3>Regístrate</h3>
+                <p>Regístrate para recibir noticias de promociones, eventos y actualizaciones.</p>
+
+                <div class="footer__subscripcion">
+                    <input type="email" class="footer__input" placeholder="Ingresa tu email">
+                    <button class="suscripcion__enviar">Enviar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 <strong>El Túnel</strong>. Todos los derechos reservados.
+                <strong> | Agencia Digital de Innovación Pública | Escuela de Código</strong>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
